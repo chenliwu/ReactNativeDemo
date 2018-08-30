@@ -11,6 +11,9 @@ import FlexWrapBasics from './src/FlexboxDemo/FlexWrap';
 import FlexBasics from './src/FlexboxDemo/Flex';
 import AlignSelfBasics from './src/FlexboxDemo/AlignSelf';
 
+import ES6_Test, { Component } from './src/ES6_Test/ES6_Test1';
+
+
 
 
 /**
@@ -21,7 +24,9 @@ import AlignSelfBasics from './src/FlexboxDemo/AlignSelf';
 //AppRegistry.registerComponent('ReactNativeDemo', () => FlexDirectionBasics);
 //AppRegistry.registerComponent('ReactNativeDemo', () => FlexWrapBasics);
 //AppRegistry.registerComponent('ReactNativeDemo', () => FlexBasics);
-AppRegistry.registerComponent('ReactNativeDemo', () => AlignSelfBasics);
+//AppRegistry.registerComponent('ReactNativeDemo', () => AlignSelfBasics);
 //AppRegistry.registerComponent('ReactNativeDemo', () => LotsOfGreetings);
 //AppRegistry.registerComponent('ReactNativeDemo', () => JustifyContentBasics );
 //AppRegistry.registerComponent('ReactNativeDemo', () => AlignItemsBasics );
+
+AppRegistry.registerComponent('ReactNativeDemo', () => ES6_Test );
