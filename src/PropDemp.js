@@ -20,7 +20,10 @@ class Greeting extends Component {
 class MessageBox extends Component{
     render(){
         return(
-            <Text>content:{this.props.content}</Text>
+            <Text>
+                content:{this.props.content}
+                title:
+            </Text>
         );
     }
 }
@@ -32,7 +35,7 @@ export default class LotsOfGreetings extends Component {
                 {/*<Greeting name='Rexxar' />*/}
                 {/*<Greeting name='Jaina' />*/}
                 {/*<Greeting name='Valeera' />*/}
-                <MessageBox content='chalie' />
+                <MessageBox content='chalie' title="title" />
             </View>
         );
     }
