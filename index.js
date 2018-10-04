@@ -15,6 +15,7 @@ import ES6_Test from './src/ES6_Test/ES6_Test1';
 import ActivityIndicator_Test from './src/Component/ActivityIndicator_Test1';
 
 import TextInputBasics from './src/Component/TextInput/TextInputBasics';
+import ListViewBasics from './src/Component/ListView/ListViewBasics';
 
 
 
@@ -31,4 +32,4 @@ import TextInputBasics from './src/Component/TextInput/TextInputBasics';
 //AppRegistry.registerComponent('ReactNativeDemo', () => JustifyContentBasics );
 //AppRegistry.registerComponent('ReactNativeDemo', () => AlignItemsBasics );
 
-AppRegistry.registerComponent('ReactNativeDemo', () => TextInputBasics);
+AppRegistry.registerComponent('ReactNativeDemo', () => ListViewBasics);
