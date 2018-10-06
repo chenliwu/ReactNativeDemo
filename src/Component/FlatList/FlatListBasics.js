@@ -97,6 +97,7 @@ export default class Main extends React.Component {
 
 
 }
+
 const styles = StyleSheet.create({
     container: {
 

@@ -17,6 +17,9 @@ import ActivityIndicator_Test from './src/Component/ActivityIndicator_Test1';
 import TextInputBasics from './src/Component/TextInput/TextInputBasics';
 import ListViewBasics from './src/Component/ListView/ListViewBasics';
 import FlatListBasics from './src/Component/FlatList/FlatListBasics';
+import ActivityIndicatorBasics from './src/Component/ActivityIndicator/ActivityIndicatorBasics';
+
+import AsyncStorageBasics from './src/AsyncStorage/AsyncStorageBasics';
 
 
 
@@ -33,4 +36,4 @@ import FlatListBasics from './src/Component/FlatList/FlatListBasics';
 //AppRegistry.registerComponent('ReactNativeDemo', () => JustifyContentBasics );
 //AppRegistry.registerComponent('ReactNativeDemo', () => AlignItemsBasics );
 
-AppRegistry.registerComponent('ReactNativeDemo', () => FlatListBasics);
+AppRegistry.registerComponent('ReactNativeDemo', () => AsyncStorageBasics);
