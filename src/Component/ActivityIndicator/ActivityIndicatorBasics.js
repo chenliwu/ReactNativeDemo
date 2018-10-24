@@ -12,8 +12,15 @@ export default class ActivityIndicatorBasics extends React.Component {
 
     constructor(props) {
         super(props);
+        /**
+         * 2018-10-24   
+         * BUG记录：如果animating初始化false，无论如何点击button，都无法将加载框显示出来。
+         * 解决方案：
+         *  <ActivityIndicator animating = {this.state.animating} /> 改为
+         *  {this.state.animating && <ActivityIndicator animating={this.state.animating} />}
+         */
         this.state = {
-            animating: true,
+            animating: false,
         }
     }
 
@@ -36,11 +43,6 @@ export default class ActivityIndicatorBasics extends React.Component {
         return (
             <View style={styles.container}>
 
-                {/* <TouchableOpacity underlayColor="#fff" style={styles.btn} onPress={
-                    this.showOrHide.bind(this)}>
-                    <Text style={{ color: '#fff', fontSize: 20 }}>显示/隐藏</Text>
-                </TouchableOpacity> */}
-
                 <Button title="显示加载指示器" onPress={() => {
                     // this.setState({
                     //     animating: true
@@ -56,8 +58,11 @@ export default class ActivityIndicatorBasics extends React.Component {
                     //alert("animating:" + this.state.animating);
                 }}></Button>
 
-                <ActivityIndicator style={[styles.centering, { height: 80 }]} size="large"
-                    animating={this.state.animating} />
+                {this.state.animating && <ActivityIndicator style={[styles.centering, { height: 80 }]} size="large"
+                    animating={this.state.animating} />}
+
+                {/* <ActivityIndicator style={[styles.centering, { height: 80 }]} size="large"
+                    animating={this.state.animating} /> */}
 
             </View >
         )
