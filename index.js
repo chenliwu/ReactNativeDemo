@@ -22,6 +22,10 @@ import RNActivityIndicatorDemo from './src/Component/ActivityIndicator/RNActivit
 
 import AsyncStorageBasics from './src/AsyncStorage/AsyncStorageBasics';
 
+import RadioButtonBasics from './src/Component/RadioButton/RadioButtonBasics';
+import ListViewEditBasics from './src/ListEdit/ListViewEditBasics';
+
+import CheckboxBasics1 from './src/Component/Checkbox/CheckboxBasics1';
 
 
 /**
@@ -37,4 +41,4 @@ import AsyncStorageBasics from './src/AsyncStorage/AsyncStorageBasics';
 //AppRegistry.registerComponent('ReactNativeDemo', () => JustifyContentBasics );
 //AppRegistry.registerComponent('ReactNativeDemo', () => AlignItemsBasics );
 
-AppRegistry.registerComponent('ReactNativeDemo', () => ActivityIndicatorBasics);
+AppRegistry.registerComponent('ReactNativeDemo', () => ListViewEditBasics);
